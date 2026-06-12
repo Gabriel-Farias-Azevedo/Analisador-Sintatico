@@ -1,0 +1,11 @@
+dispositivo: {SensorPresenca, presenca}
+dispositivo: {LampadaSala}
+dispositivo: {Alarme}
+
+set presenca = True.
+
+se presenca == True entao
+    ligar LampadaSala.
+    enviar alerta("Intruso detectado no perimetro!") para Alarme.
+senao
+    desligar LampadaSala.

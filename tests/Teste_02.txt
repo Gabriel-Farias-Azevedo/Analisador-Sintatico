@@ -1,0 +1,10 @@
+dispositivo: {Termometro, temperatura}
+dispositivo: {ArCondicionado}
+dispositivo: {Ventilador}
+dispositivo: {Umidificador}
+
+set temperatura = 42.
+
+se temperatura > 40 entao
+    enviar alerta("Perigo! Temperatura critica detectada:", temperatura) para ArCondicionado, Ventilador.
+    enviar alerta("Notificacao geral de seguranca de hardware") para todos.

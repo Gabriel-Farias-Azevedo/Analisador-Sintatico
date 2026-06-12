@@ -1,0 +1,5 @@
+dispositivo: {SensorLuz, luminosidade}
+dispositivo: {CortinaAutomatica}
+
+se luminosidade < 10 entao
+    ligar CortinaAutomatica.
