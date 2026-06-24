@@ -9,3 +9,4 @@ se presenca == True entao
     enviar alerta("Intruso detectado no perimetro!") para Alarme.
 senao
     desligar LampadaSala.
+fim

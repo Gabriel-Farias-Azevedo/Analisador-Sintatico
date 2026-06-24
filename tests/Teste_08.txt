@@ -1,0 +1,5 @@
+dispositivo: {Alarme}
+dispositivo: {Sirene}
+dispositivo: {LuzEmergencia}
+
+enviar alerta("Evacuacao imediata!") para Alarme, Sirene, LuzEmergencia.

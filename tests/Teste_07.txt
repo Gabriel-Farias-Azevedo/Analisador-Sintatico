@@ -1,0 +1,5 @@
+dispositivo: {Lampada}
+
+ligar Lampada.
+desligar Lampada.
+verificar Lampada.

@@ -15,7 +15,8 @@ reserved = {
     'desligar': 'DESLIGAR',
     'verificar': 'VERIFICAR',
     'True': 'BOOL',
-    'False': 'BOOL'
+    'False': 'BOOL',
+    "fim": 'FIM'
 }
 
 # Lista de todos os tokens reconhecidos pelo analisador
@@ -65,7 +66,7 @@ def t_NUM(t):
 
 # Reconhece identificadores e verifica se são palavras reservadas
 def t_NAMEDEVICE(t):
-    r'[a-zA-Z_][a-zA-Z0-9_]*'
+    r'[a-zA-Z]+'
     if t.value in reserved:
         t.type = reserved[t.value]
         if t.type == 'BOOL':

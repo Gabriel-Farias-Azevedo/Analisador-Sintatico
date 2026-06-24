@@ -6,5 +6,10 @@ dispositivo: {Umidificador}
 set temperatura = 42.
 
 se temperatura > 40 entao
-    enviar alerta("Perigo! Temperatura critica detectada:", temperatura) para ArCondicionado, Ventilador.
-    enviar alerta("Notificacao geral de seguranca de hardware") para todos.
+    enviar alerta("Perigo!", temperatura) para ArCondicionado, Ventilador.
+    enviar alerta("Notificacao") para todos:.
+fim
+
+se temperatura > 40 entao
+    enviar alerta("Outra acao") para ArCondicionado.
+fim

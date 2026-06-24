@@ -1,0 +1,10 @@
+dispositivo: {Termometro, temperatura}
+dispositivo: {SensorLuz, luminosidade}
+dispositivo: {Cortina}
+
+set temperatura = 30.
+set luminosidade = 5.
+
+se temperatura > 25 && luminosidade < 10 entao
+    ligar Cortina.
+fim

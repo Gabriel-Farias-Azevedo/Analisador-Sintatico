@@ -1,0 +1,6 @@
+dispositivo: {SensorUmidade, umidade}
+dispositivo: {Umidificador}
+
+se umidade < 20 entao
+    ligar Umidificador.
+fim

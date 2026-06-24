@@ -3,4 +3,6 @@ dispositivo: {ArCondicionado}
 
 set temperatura = 35.
 
-se temperatura > 30 entao ligar ArCondicionado.
+se temperatura > 30 entao
+    ligar ArCondicionado.
+fim
